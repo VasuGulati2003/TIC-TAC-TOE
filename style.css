@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #ffd500;
+    font-style: italic;
+    font-size: 4rem;
+}
+body{
+    background-color: #497f85;
+    text-align: center;
+}
+
+.container{
+    
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: rgb(255, 255, 255);
+}
+#reset{
+    padding: 1rem;
+    font: 1.25rem;
+    background-color:#191913;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(232, 227, 227, 0.5);
+}
+#newGame{
+    padding: 1rem;
+    font: 1.25rem;
+    background-color:#191913;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(232, 227, 227, 0.5);
+}
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    #newGame {
+        font-size: 0.5rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+}
+/* Media Query for screens between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #newGame {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 0.5rem;
+    }
+}
+/* Media Query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+    #newGame {
+        font-size: 1rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+    }
+}
+#msg{
+    color: rgb(255, 255, 255);
+    font-size: 10vmin;
+}
+@media screen and (max-width: 768px){
+    #msg{
+        color: rgb(255, 255, 255);
+        font-size: 8vmin;
+    }
+}
+.msgcontainer{
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
